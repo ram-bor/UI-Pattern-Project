@@ -1,0 +1,24 @@
+body {
+    background-image: url('img/tropical.jpg');
+    background-size: contain;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+}
+
+h1 {    
+    text-align: center;
+}
+
+.cocktails {
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+img {
+    height: 200px;
+}
+
+.drink {
+}
