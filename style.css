@@ -55,13 +55,15 @@ h3 {
     max-width: 700px;
 }
 
-.info {
+#info {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
     margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
     text-align: center;
-    color: #ccc;
+    color: whitesmoke;
     padding: 10px 0;
     height: 150px;
 }
@@ -78,20 +80,25 @@ h3 {
         to {transform:scale(1)}
 }
 
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close-button:hover, .close-button:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 
 @media only screen and (max-width: 700px) {
     .modal-content {
     width: 100%;
     }
 }
-
-.close-button {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-/* remember to add media queries*/
