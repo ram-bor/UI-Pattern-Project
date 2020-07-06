@@ -1,7 +1,7 @@
 body {
-    background-image: url('img/tropical.jpg');
-    background-size: contain;
-    color: white;
+    /* background-image: url('img/anothertropical.jpg'); */
+    background-position: 100%;
+    /* color: white; */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 30px;
 }
@@ -11,14 +11,86 @@ h1 {
 }
 
 .cocktails {
-    display: flexbox;
+    display: inline-flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
 
-img {
-    height: 200px;
+h3 {
+    text-align: center;
+    color: black;
+    /* visibility: hidden; */
 }
 
-.drink {
+#images {
+    height: 500px;
+    width: auto;
+    border-radius: 5px;
+    cursor: pointer; /* find a cursor gif if you have time */
+    transition: 0.2s;
 }
+
+#images:hover {
+    opacity: 0.7;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.info {
+    display: wrap;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.modal-content, #info {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+        from {transform:scale(0)}
+        to {transform:scale(1)}
+}
+
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+    width: 100%;
+    }
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+/* remember to add media queries*/
