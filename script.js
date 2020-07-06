@@ -28,7 +28,6 @@ for (let i=0; i < drink.length; i++) {
         e.preventDefault()
         modal[i].style.display = "block"
         modalImg[i].attributes[0].value = image[i].attributes[0].value
-        console.log(e.target.src)
     }) 
 
     close[i].addEventListener('click', function(e) {
