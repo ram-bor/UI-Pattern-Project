@@ -9,10 +9,12 @@ let modal = document.querySelectorAll("#myModal")
 
 // var for the original image (so to be used as the modal image)
 let image = document.querySelectorAll("#images")
+// console.log(image[0].attributes[0].value)
 
 // var for the modal image 
 let modalImg = document.querySelectorAll("#modal-image")
-console.log(modalImg[0])
+// console.log(modalImg[0].attributes[0].value)
+
 // var for the modal info a.k.a. the text
 let modalText = document.querySelectorAll("#info")
 
@@ -25,7 +27,7 @@ for (let i=0; i < drink.length; i++) {
     image[i].addEventListener('click', function(e) {
         e.preventDefault()
         modal[i].style.display = "block"
-        // modalImg.src
+        modalImg[i].attributes[0].value = image[i].attributes[0].value
         console.log(e.target.src)
     }) 
 

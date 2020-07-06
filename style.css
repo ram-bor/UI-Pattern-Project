@@ -45,7 +45,7 @@ h3 {
     height: 100%;
     overflow: auto;
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
 }
 
 .modal-content {
