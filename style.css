@@ -3,7 +3,7 @@ body {
     background-position: 100%;
     /* color: white; */
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 h1 {    
@@ -26,7 +26,9 @@ h3 {
     color: seagreen;
     visibility: hidden;
 }
-
+.drink {
+    margin: 20px;
+}
 #images {
     height: 450px;
     width: auto;
@@ -75,9 +77,9 @@ h3 {
 
 .modal-content, #info {  
     -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
+    -webkit-animation-duration: 0.7s;
     animation-name: zoom;
-    animation-duration: 0.6s;
+    animation-duration: 0.7s;
 }
 
 @keyframes zoom {
