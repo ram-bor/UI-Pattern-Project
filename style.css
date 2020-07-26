@@ -1,111 +1,116 @@
 body {
-    /* background-image: url('img/anothertropical.jpg'); */
-    background-position: 100%;
-    /* color: white; */
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 40px;
+  /* background-image: url('img/anothertropical.jpg'); */
+  background-position: 100%;
+  /* color: white; */
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 40px;
 }
 
-h1 {    
-    text-align: center;
-    color: peru;
-    margin: 100px;
+h1 {
+  text-align: center;
+  color: peru;
+  margin: 100px;
 }
 
 .cocktails {
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 h3 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center;
-    color: seagreen;
-    visibility: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  color: seagreen;
+  visibility: hidden;
 }
 .drink {
-    margin: 20px;
+  margin: 20px;
 }
 #images {
-    height: 450px;
-    width: auto;
-    border-radius: 5px;
-    cursor: pointer; /* find a cursor gif if you have time */
-    transition: 0.2s;
+  height: 450px;
+  width: auto;
+  border-radius: 5px;
+  cursor: pointer; /* find a cursor gif if you have time */
+  transition: 0.2s;
 }
 
 #images:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .modal {
-    display: none; 
-    position: fixed;
-    z-index: 1;
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
 }
 
 .modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
 }
 
 #info {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: whitesmoke;
-    padding: 10px 0;
-    height: 150px;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: whitesmoke;
+  padding: 10px 0;
+  height: 150px;
 }
 
-.modal-content, #info {  
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.7s;
-    animation-name: zoom;
-    animation-duration: 0.7s;
+.modal-content,
+#info {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.7s;
+  animation-name: zoom;
+  animation-duration: 0.7s;
 }
 
 @keyframes zoom {
-        from {transform:scale(0)}
-        to {transform:scale(1)}
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 .close-button {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-.close-button:hover, .close-button:focus {
+.close-button:hover,
+.close-button:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
 }
 
-
 @media only screen and (max-width: 700px) {
-    .modal-content {
+  .modal-content {
     width: 100%;
-    }
+  }
 }
