@@ -1,21 +1,25 @@
+# 🍹 Refreshing Cocktails 🍹
 
+View five of the most popular and refreshing cocktails to imbibe this summer or any time of the year because why not?
+Every cocktail comes with name + ingredients + recipes. Improve your existing or nonexistent mixology skills by following their recipe list. Enjoy!
 
-## UI Pattern
+Deployed Website: https://ram-bor.github.io/UI-Pattern-Project/
 
-You will need to pick a UI pattern from the list below and an API. You'll then
-build out the UI pattern you chose to work with the API you chose.
+## UI Pattern & API
 
+The User Interface pattern that I used for this website is a modal window. Simply hover over an image and click to display a modal containing an enhanced image of a cocktail along with its information. An X signifies the button to close the modal window. 
 
-#### Modal
+For the API, I used data from https://www.thecocktaildb.com/api.php and a few images sourced from https://unsplash.com/ since a few images were blurry and outdated.
 
-When a user clicks on a link, a box should appear in the center of the screen
-with the details for the item that the user clicks on. The box should have some
-way for the user to close the box and see the full list of items.
+## Technologies 
+* HTML
+* CSS
+* Javascript
 
-![modal](https://media.git.generalassemb.ly/user/8618/files/3422a180-fa60-11e9-82a9-3e11fbe9da37)
+## Installation
+* Clone down repo: https://github.com/ram-bor/UI-Pattern-Project
+* cd into correct directory
+* open index.html in preferred browser (Chrome recommended)
 
-
-There is also
-[this collection of public APIs](https://github.com/public-apis/public-apis).
-
-
+## Contact 
+https://github.com/ram-bor
