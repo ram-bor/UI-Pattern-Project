@@ -5,7 +5,7 @@ Every cocktail comes with name + ingredients + recipes. Improve your existing or
 
 Deployed Website: https://ram-bor.github.io/UI-Pattern-Project/
 
-![](cocktail-ui-page.mp4)
+![](cocktail-ui-page.gif)
 
 ## UI Pattern & API
 
