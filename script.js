@@ -47,7 +47,6 @@ for (let i = 0; i < drink.length; i++) {
           return res.json();
         })
         .then((data) => {
-          // console.log(data.drinks[0].strIngredient1);
           console.log(data.drinks[0]);
           let name = data.drinks[0].strDrink;
           console.log(name);
