@@ -1,4 +1,3 @@
-// create your nouns or variables
 let links = [
   {
     name: "Margarita",
@@ -24,34 +23,20 @@ let links = [
   },
 ];
 
-// var for the drink and  modal divs
+
 let drink = document.querySelectorAll(".drink");
 let modal = document.querySelectorAll("#myModal");
-// var for the original image (so to be used as the modal image)
 let image = document.querySelectorAll("#images");
-// console.log(image[0].attributes[0].value)
-
-// var for the modal image
 let modalImg = document.querySelectorAll("#modal-image");
-// console.log(modalImg[0].attributes[0].value)
-
-// var for the modal info a.k.a. the text
 let modalText = document.querySelectorAll("#info");
-// console.log(modalText[0].innerText);
-
-// var for closing button to close modal
 let close = document.querySelectorAll(".close-button");
-
 let drinkNames = document.querySelectorAll("h3");
-// console.log(drinkNames[1].textContent);
 
-// create for loop for every image div, then add click event listener to image to prompt the modal to open once clicked
 for (let i = 0; i < drink.length; i++) {
   image[i].addEventListener("click", function (e) {
     e.preventDefault();
-    // console.log(e);
     modal[i].style.display = "block";
-    modalImg[i].attributes[0].value = image[i].attributes[0].value; // image for modal
+    modalImg[i].attributes[0].value = image[i].attributes[0].value;
 
     const drinkName = drinkNames[i].textContent;
 
@@ -82,7 +67,6 @@ for (let i = 0; i < drink.length; i++) {
     }
   });
 
-  // close button click event listener
   close[i].addEventListener("click", function (e) {
     e.preventDefault();
     modal[i].style.display = "none";
